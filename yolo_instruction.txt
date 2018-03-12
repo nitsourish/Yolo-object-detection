@@ -1,0 +1,17 @@
+1) Follow all the instruction from
+https://github.com/thtrieu/darkflow
+
+2) Down load yolo and tiny yolo weights from
+https://pjreddie.com/darknet/yolo/
+Put these wights in to a folder named 'bin' inside the original folder('darkflow-master') 
+you can view the weights at command prompt by writing following command in command prompt
+
+python flow --model cfg/yolo.cfg --load bin/yolo.weights
+
+
+3) Store your sample images and Videos in desired location(for me the path is test/training/images inside 'darkflow-master' folder) inside the original folder('darkflow-master') 
+
+4) Open the command prompt and write these commands
+python flow --imgdir test/training/images --model cfg/yolo.cfg --load bin/yolo.weights ------This will create object classification and bounding boxes arond objects for respective images(I used YOLO weights, You can use tiny-yolo weights also)
+python flow --imgdir sample_img --model cfg/yolo.cfg --load bin/yolo.weights           ------This will create object classification and bounding boxes arond objects for respective images(I used YOLO weights, You can use tiny-yolo weights also)
+python flow --model cfg/yolo.cfg --load bin/yolo.weights --demo person.mp4 --saveVideo ------This will create object classification and bounding boxes arond objects for respective video
