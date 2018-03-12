@@ -1,5 +1,0 @@
-https://github.com/thtrieu/darkflow
-python flow --imgdir test/training/images --model cfg/yolo.cfg --load bin/yolo.weights
-python setup.py build_ext --inplace
-python flow --demo sample_img/image1.jpg --model cfg/yolo.cfg --load bin/yolo.weights
-python flow --model cfg/yolo.cfg --load bin/yolo.weights --demo person.mp4 --saveVideo
