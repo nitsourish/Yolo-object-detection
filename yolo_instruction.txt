@@ -15,3 +15,4 @@ python flow --model cfg/yolo.cfg --load bin/yolo.weights
 python flow --imgdir test/training/images --model cfg/yolo.cfg --load bin/yolo.weights ------This will create object classification and bounding boxes arond objects for respective images(I used YOLO weights, You can use tiny-yolo weights also)
 python flow --imgdir sample_img --model cfg/yolo.cfg --load bin/yolo.weights           ------This will create object classification and bounding boxes arond objects for respective images(I used YOLO weights, You can use tiny-yolo weights also)
 python flow --model cfg/yolo.cfg --load bin/yolo.weights --demo person.mp4 --saveVideo ------This will create object classification and bounding boxes arond objects for respective video
+python flow --demo sample_img/image1.jpg --model cfg/yolo.cfg --load bin/yolo.weights
